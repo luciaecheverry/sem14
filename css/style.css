@@ -1,3 +1,32 @@
 main {
-    min-height: calc(100vh - 160px);
-  }
+  min-height: calc(100vh - 160px);
+}
+
+/* Contenedor de las tarjetas */
+.tarjetas-contenedor {
+  display: flex;                
+  flex-wrap: wrap;              
+  justify-content: flex-start;  
+  gap: 20px;                    
+}
+
+/* Tarjetas individuales */
+.tarjetas-contenedor .card {
+  width: 300px;                 
+  flex-grow: 1;                 
+  margin-bottom: 20px;          
+}
+
+/* Ajustes adicionales para que las imágenes ocupen todo el ancho de la tarjeta */
+.tarjetas-contenedor .card img {
+  width: 100%;                 
+  height: 150px;                
+  object-fit: cover;            
+}
+
+/* Estilo para la descripción dentro de la tarjeta */
+.card .card-text {
+  max-height: 100px;           
+  overflow-y: auto;            
+  padding-right: 10px;         
+}
